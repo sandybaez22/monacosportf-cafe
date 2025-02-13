@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="icon" href="logo1.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        h2,
+        .precio,
+        p {
+            background-color: rgba(0, 0, 0, 0.7);
+            /* Fondo semitransparente */
+            color: #fff;
+            /* Color blanco para el texto */
+            padding: 5px;
+            /* Espaciado interno */
+            border-radius: 5px;
+            /* Bordes redondeados */
+            margin: 5px 0;
+            /* Espaciado arriba y abajo */
+        }
+        
+        body {
+            background-color: #4B3D3D;
+            /* Color café */
+            font-family: Arial, sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            /* Añadido */
+            flex-direction: column;
+            /* Añadido */
+            align-items: center;
+            /* Añadido */
+        }
+        
+        header {
+            text-align: center;
+            padding: 10px;
+            font-size: 32px;
+            /* Aumenté el tamaño */
+            font-family: 'Lobster', cursive;
+            /* Fuente llamativa */
+        }
+        
+        .productos {
+            text-align: center;
+            margin: 20px 0;
+            font-style: italic;
+            /* Texto en cursivas */
+            font-size: 24px;
+            color: #D2691E;
+            /* Color terracota */
+        }
+        
+        .producto-container {
+            display: grid;
+            /* Usar grid para organizar los productos */
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            /* Cambiado para ser más flexible */
+            gap: 20px;
+            /* Espacio entre los productos */
+            padding: 20px;
+            /* Espacio alrededor del contenedor */
+            max-width: 1200px;
+            /* Ancho máximo del contenedor */
+            width: 100%;
+            /* Ancho del contenedor */
+        }
+        
+        .producto {
+            background-color: rgba(0, 0, 0, 0.2);
+            /* Fondo semitransparente para el producto */
+            border-radius: 10px;
+            /* Bordes redondeados */
+            padding: 10px;
+            /* Espaciado interno */
+            text-align: center;
+            transition: transform 0.3s;
+            /* Animación moderna */
+            position: relative;
+            /* Para posicionar el texto sobre la imagen */
+        }
+        
+        .producto:hover {
+            transform: scale(1.1);
+            /* Aumenta el tamaño al pasar el mouse */
+        }
+        
+        img {
+            width: 100%;
+            /* Ajustar la imagen al contenedor */
+            height: auto;
+            /* Mantener la proporción de la imagen */
+            object-fit: cover;
+            /* Mantener la proporción de la imagen */
+            border-radius: 10px;
+            /* Bordes redondeados */
+        }
+        
+        button {
+            background-color: #4CAF50;
+            /* Color verde */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            /* Efecto al pasar el mouse */
+        }
+        
+        button:hover {
+            background-color: #45a049;
+            /* Color verde más oscuro al pasar el mouse */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Productos</h1>
+    </header>
+
+    <div class="producto-container">
+        <div class="producto">
+            <img src="nachos.jpg" alt="Nachos">
+            <h2>Nachos</h2>
+            <p class="precio">275$</p>
+            <p>Disfruta de unos ricos <br> nachos crujientes y deliciosos.</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="papasfritas.jpg" alt="Papas fritas">
+            <h2>Papas fritas</h2>
+            <p class="precio">250$</p>
+            <p>Disfruta de unas deliciosas papas fritas.</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="alitasdepollo.jpg" alt="Alitas de pollo">
+            <h2>Alitas de Pollo</h2>
+            <p class="precio">350$</p>
+            <p>Disfruta de unas deliciosas alitas de pollo.</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="platomixto.jpg" alt="Plato Mixto">
+            <h2>Plato Mixto</h2>
+            <p class="precio">400$</p>
+            <p>Un delicioso plato mixto con queso y salsa.</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="hamburguesa.jpg" alt="Hamburguesa">
+            <h2>Hamburguesa</h2>
+            <p class="precio">300$</p>
+            <p>Disfruta de unas ricas hamburguesas.</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="icedtea.jpg" alt="Iced Tea">
+            <h2>Iced Tea</h2>
+            <p class="precio">125$</p>
+            <p>Un café de té con hielo.</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="cappuccino.jpg" alt="Cappuccino">
+            <h2>Cappuccino</h2>
+            <p class="precio">150$</p>
+            <p>Un café de té con leche y limón.</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="icedcapuccino.jpg" alt="Iced Cappuccino">
+            <h2>Iced Cappuccino</h2>
+            <p class="precio">150$</p>
+            <p>Es una bebida hecha <br> con té matcha.</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="matchalatte.jpg" alt="Matcha latte">
+            <h2>Matcha latte</h2>
+            <p class="precio">100$</p>
+            <p>Un polvo de té verde <br> japonés y leche.</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="mochaccino.jpg" alt="Mochaccino">
+            <h2>Mochaccino</h2>
+            <p class="precio">150$</p>
+            <p>Una bebida combinada de expreso, <br> leche y chocolate.</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="mochiano.jpg" alt="Mochiano">
+            <h2>Mochiano</h2>
+            <p class="precio">50$</p>
+            <p>Una mezcla de café, leche y chocolate.</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="mochalatte.jpg" alt="Mocha latte">
+            <h2>Mocha latte</h2>
+            <p class="precio">150$</p>
+            <p>Una bebida combinada de café <br> expreso, leche y jarabe de chocolate.</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="macchiatoice.jpg" alt="Macchiato Ice">
+            <h2>Macchiato Ice</h2>
+            <p class="precio">150$</p>
+            <p>Una bebida de café que se prepara <br> con espresso y leche fría.</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="lemontea.jpg" alt="Lemon Tea">
+            <h2>Lemon Tea</h2>
+            <p class="precio">75$</p>
+            <p>Té con Limon.</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="frapuccino.jpg" alt="Frapuccino">
+            <h2>Frapuccino</h2>
+            <p class="precio">150$</p>
+            <p>Una bebida fría y cremosa hecha café o crema.</p>
+            <button>Comprar</button>
+        </div>
+    </div>
+</body>
+
+</html>
